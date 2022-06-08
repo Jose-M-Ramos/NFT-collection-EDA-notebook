@@ -1,14 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[47]:
 
 
 import pandas as pd
 import requests 
-
-
-# In[39]:
 
 
 def max_calls(x):
@@ -17,9 +11,6 @@ def max_calls(x):
         
     return str(max(numbers))
         
-
-
-# In[50]:
 
 
 def get_all_data(first_block_contract, collection_contract, personal_apikey):
@@ -65,13 +56,13 @@ def get_all_data(first_block_contract, collection_contract, personal_apikey):
     return list_df
 
 
-# In[49]:
 
 
-get_full_data("12864862", "0x1Eb7382976077f92cf25c27CC3b900a274FD0012", "1HTNWZIW5WAT5KV8P58IUH88SQINB8VADJ")
+
+print(get_all_data("12864862", "0x1Eb7382976077f92cf25c27CC3b900a274FD0012", "1HTNWZIW5WAT5KV8P58IUH88SQINB8VADJ"))
 
 
-# In[ ]:
+
 
 
 
