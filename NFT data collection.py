@@ -7,9 +7,9 @@ import requests
 
 def max_calls(x):
     
-    numbers = [(int(str((x[i])), 16)) for i in range(999)]
+    num = [(int(str((x[i])), 16)) for i in range(999)]
         
-    return str(max(numbers))
+    return str(max(num))
         
 
 
@@ -58,7 +58,7 @@ def get_all_data(first_block_contract, collection_contract, personal_apikey):
 
 
 
-
+#All the transactions of bored apes in form of a data frame
 print(get_all_data("12864862", "0x1Eb7382976077f92cf25c27CC3b900a274FD0012", "1HTNWZIW5WAT5KV8P58IUH88SQINB8VADJ"))
 
 
