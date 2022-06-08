@@ -40,7 +40,7 @@ def get_all_data(first_block_contract, collection_contract, personal_apikey):
       list_df.append(df) 
 
       try: 
-        fromBlock = max_function(df.blockNumber) 
+        fromBlock = max_calls(df.blockNumber) 
       except:
         pass
 
